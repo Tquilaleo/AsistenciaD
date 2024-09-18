@@ -1,0 +1,28 @@
+ion-content {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    justify-content: center;
+    /* Centra horizontalmente */
+}
+
+.card-container {
+    width: 100%;
+    /* Opcional, para asegurar que el contenedor ocupe todo el ancho disponible */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ion-card {
+    width: 90%;
+    /* Ajusta el ancho del card según sea necesario */
+    max-width: 500px;
+    /* Ajusta el máximo ancho del card */
+}
+
+.botones-clases {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los botones */
+  }

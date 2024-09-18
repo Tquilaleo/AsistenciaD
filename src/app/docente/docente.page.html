@@ -1,0 +1,44 @@
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title><ion-icon name="home-outline"></ion-icon>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content class="ion-padding">
+    <div class="button-bar">
+      <ion-button (click)="salirAplicacion()"><ion-icon name="exit-outline"></ion-icon>Cerrar sesión</ion-button>
+    </div>
+  </ion-content>     
+</ion-menu>
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> <!-- Botón para abrir el menú -->
+    </ion-buttons>
+    <ion-title>
+      Bienvenido, {{nombre}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<!-- Asegúrate de que el content tenga el id="main-content" -->
+<ion-content id="main-content" [fullscreen]="true">
+  <div class="card-container">
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title> Clases asignadas </ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content>
+        <div class="botones-clases">
+          <ion-button [routerLink]="['/qrdocente']"><ion-icon name="qr-code-outline"></ion-icon>Clase 007v App móvil</ion-button>
+          <ion-button [routerLink]="['/qrdocente']"><ion-icon name="qr-code-outline"></ion-icon>Clase 108v SQL</ion-button>
+          <ion-button [routerLink]="['/qrdocente']"><ion-icon name="qr-code-outline"></ion-icon>Clase 207v Arquitectura</ion-button>  
+        </div>
+      </ion-card-content>
+
+    </ion-card>
+  </div>  
+</ion-content>
