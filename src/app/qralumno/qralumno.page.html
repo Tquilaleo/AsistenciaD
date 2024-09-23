@@ -1,13 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>qralumno</ion-title>
+    <ion-title>Camara</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">qralumno</ion-title>
-    </ion-toolbar>
-  </ion-header>
+
+
+  <ion-card>
+    <div class="contenedor-qr">
+      <img src="assets/camaras.jpg"> 
+    </div>
+        <div class="botones">
+        <ion-button (click)="Volver()">Volver</ion-button>
+        <ion-button (click)="salirAplicacion()">Salir</ion-button>  
+      </div>  
+
+  </ion-card>
+
+
+
 </ion-content>

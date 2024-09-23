@@ -17,8 +17,6 @@ export class QrdocentePage implements OnInit {
 
   Volver(){
     this.router.navigate(['/docente'])
-
-
   }
 
   ngOnInit() {

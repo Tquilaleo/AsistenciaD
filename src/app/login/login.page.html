@@ -1,6 +1,6 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-title>Duoc</ion-title>
+    <ion-title>Login</ion-title>
   </ion-toolbar>
 </ion-header>
 
@@ -8,15 +8,13 @@
   <ion-card-content>
     <div class='container'>
       <ion-content [fullscreen]="true" class="login-content">
-        
         <ion-card-header>
           <ion-card-title>
             <div class="centered-container">
               <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="Login Image" class="login-image">
             </div>
           </ion-card-title>
-        </ion-card-header>    
-        
+        </ion-card-header>
 
         <form [formGroup]="usuario" (ngSubmit)="navegarExtras()">
           <ion-item>

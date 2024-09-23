@@ -1,0 +1,27 @@
+ion-content {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center;     /* Centra verticalmente */
+    height: 100vh;           /* Ocupa toda la ventana, no solo el contenido */
+    padding: 16px;           /* Opcional, para darle algo de espacio interior */
+}
+
+.contenedor-qr {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Espacio entre los botones */
+}
+
+ion-card {
+    width: 90%;
+    max-width: 500px;
+    margin: auto;  /* Centra el card con margen automático */
+    padding: 16px; /* Opcional, para que el contenido dentro del card no quede pegado */
+}

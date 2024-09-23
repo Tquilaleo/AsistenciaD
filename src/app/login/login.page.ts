@@ -1,6 +1,7 @@
 import { Router, NavigationExtras } from '@angular/router';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Component, OnInit } from '@angular/core';
+import { AlertController } from '@ionic/angular'; // Importar AlertController
 
 @Component({
   selector: 'app-login',
@@ -18,13 +19,24 @@ export class LoginPage implements OnInit {
 
   profesor = { nombre: 'diego', contraseña: '372' };
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, private alertController: AlertController) { } // Agregar AlertController
 
   // Define el formulario con validaciones
   usuario = new FormGroup({
     user: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(20)]),
     pass: new FormControl('', [Validators.required, Validators.minLength(4), Validators.maxLength(20)]),
   });
+
+  // Método para mostrar la alerta
+  async presentAlert(message: string) {
+    const alert = await this.alertController.create({
+      header: 'Error',
+      message: message,
+      buttons: ['OK'],
+    });
+
+    await alert.present();
+  }
 
   // Método que maneja el envío del formulario
   navegarExtras() {
@@ -47,15 +59,14 @@ export class LoginPage implements OnInit {
       this.router.navigate(['/docente'], { state: { nombre: userName } });
     } else {
       // Si las credenciales no coinciden, muestra un mensaje de error
-      alert('Nombre o contraseña incorrectos');
+      this.presentAlert('Nombre o contraseña incorrectos'); // Usar el popup
     }
   }
 
   ngOnInit() {
   }
 
-  salirAplicacion(){
-
-    this.router.navigate(['/login'])
+  salirAplicacion() {
+    this.router.navigate(['/login']);
   }
 }

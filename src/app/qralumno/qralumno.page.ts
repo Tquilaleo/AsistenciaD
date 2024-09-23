@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-qralumno',
@@ -7,7 +8,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QralumnoPage implements OnInit {
 
-  constructor() { }
+  constructor(private router : Router) { }
+
+  salirAplicacion(){
+
+    this.router.navigate(['/login'])
+  }
+
+  Volver(){
+    this.router.navigate(['/docente'])
+  }
 
   ngOnInit() {
   }

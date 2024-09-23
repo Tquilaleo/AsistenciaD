@@ -1,0 +1,78 @@
+.centered-container {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+
+}
+
+.login-image {
+    max-width: 70%;
+    /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    /* Mantener la proporción original */
+}
+
+
+
+/* Estilos para la tarjeta */
+.custom-card {
+    background-color: #ffffff;
+    /* Color de fondo */
+    border-radius: 10px;
+    /* Borde redondeado */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Sombra suave */
+    padding: 30px;
+    /* Espaciado interno */
+    flex-direction: column;
+    justify-content: space-between
+    
+}
+
+/* Estilos para el título de la tarjeta */
+.custom-card-title {
+    font-size: 1.2rem;
+    /* Tamaño de fuente del título */
+    color: #333333;
+    /* Color del texto del título */
+    font-weight: bold;
+    /* Negrita */
+}
+
+/* Estilos para el encabezado de la tarjeta */
+.custom-card-header {
+    font-size: 1rem;
+    /* Tamaño de fuente del encabezado */
+    color: #666666;
+    /* Color del texto del encabezado */
+    margin-bottom: 20px;
+    /* Espaciado inferior */
+}
+
+/* Estilos para el botón de la tarjeta */
+.custom-button {
+    --border-radius: 50px;
+    /* Borde redondeado del botón */
+    --background: #313fc0;
+    /* Color de fondo del botón */
+    --color: #ffffff;
+    /* Color del texto del botón */
+    --padding-start: 20px;
+    /* Espaciado interno izquierdo */
+    --padding-end: 20px;
+    /* Espaciado interno derecho */
+    font-weight: bold;
+    /* Negrita */
+    
+}
+
+/* Aplicar márgenes o espaciados según sea necesario */
+.custom-card-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boton-center{
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+}

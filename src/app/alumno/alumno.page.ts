@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { AlertController } from '@ionic/angular'; // Importar AlertController
 
 @Component({
   selector: 'app-alumno',
@@ -7,9 +8,9 @@ import { Router } from '@angular/router';
   styleUrls: ['./alumno.page.scss'],
 })
 export class AlumnoPage implements OnInit {
-  nombre: string = ''; // Inicializado como cadena vacía o usar nombre!: string;
+  nombre: string = ''; // Inicializado como cadena vacía
 
-  constructor(private router: Router) {}
+  constructor(private router: Router, private alertController: AlertController) {} // Inyectar AlertController
 
   ngOnInit() {
     const navigation = this.router.getCurrentNavigation();
@@ -18,8 +19,34 @@ export class AlumnoPage implements OnInit {
     }
   }
 
-  salirAplicacion(){
+  salirAplicacion() {
+    this.router.navigate(['/login']);
+  }
 
-    this.router.navigate(['/login'])
+  // Función para mostrar la alerta
+  async presentAlert() {
+    const alert = await this.alertController.create({
+      header: 'Activa tu ubicación',
+      message: 'Debes activar tu ubicación para poder registrar tu asistencia',
+      buttons: [
+        {
+          text: 'Cancelar',
+          role: 'cancel',
+          handler: () => {
+            console.log('Alert canceled');
+          },
+        },
+        {
+          text: 'OK',
+          role: 'confirm',
+          handler: () => {
+            console.log('Alert confirmed');
+            this.router.navigate(['/qralumno']);
+          },
+        },
+      ],
+    });
+
+    await alert.present();
   }
 }
