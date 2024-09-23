@@ -21,8 +21,10 @@ body {
 }
 
 .login-image {
-  width: 200px; // Ajusta el tamaño de la imagen
-  margin-bottom: 1px; // Espacio debajo de la imagen
+    max-width: 70%;
+    /* Ajusta el ancho máximo de la imagen */
+    height: auto;
+    /* Mantener la proporción original */
 }
 
 .custom-card {
