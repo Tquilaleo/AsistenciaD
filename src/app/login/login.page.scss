@@ -1,12 +1,40 @@
+// styles.scss o un archivo SCSS específico
+
+$primary-color: #4CAF50; // Color principal
+$background-color: #f9f9f9; // Color de fondo
+$text-color: #333; // Color del texto
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alinea verticalmente */
-    align-items: center;     /* Alinea horizontalmente */
-    height: 100vh;           /* Asegura que el contenedor tenga altura completa de la vista */
-  }
-  
-  ion-card {
-    --background: #000;
-    --color: #9efff0;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; // Altura total de la pantalla
+  background-color: $background-color;
+  padding: 0 16px; // Espaciado lateral
+}
+
+.login-content {
+  width: 100%;
+  max-width: 400px; // Ancho máximo del card
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.centered-container {
+  text-align: center;
+  margin-bottom: 20px; // Espaciado inferior
+}
+
+.login-image {
+  width: 200px; // Ancho de la imagen
+  margin: 0 auto; // Centrar imagen
+}
+
+ion-item {
+  margin-bottom: 16px; 
+}
+
+ion-button {
+  font-weight: bold; 
+}

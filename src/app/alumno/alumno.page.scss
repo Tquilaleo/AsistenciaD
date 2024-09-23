@@ -1,78 +1,69 @@
-.centered-container {
-    display: flex;
-    justify-content: center;
-    /* Centra el contenido horizontalmente */
+// styles.scss
 
+$primary-color: #4a90e2; // Color principal
+$secondary-color: #ffffff; // Color de fondo
+$font-family: 'Arial', sans-serif; // Fuente
+
+body {
+  font-family: $font-family;
+  background-color: $secondary-color;
+  margin: 0;
+  padding: 0;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh; // Ocupa toda la altura de la ventana
+  text-align: center;
 }
 
 .login-image {
-    max-width: 70%;
-    /* Ajusta el ancho máximo de la imagen */
-    height: auto;
-    /* Mantener la proporción original */
+  width: 200px; // Ajusta el tamaño de la imagen
+  margin-bottom: 20px; // Espacio debajo de la imagen
 }
 
-
-
-/* Estilos para la tarjeta */
 .custom-card {
-    background-color: #ffffff;
-    /* Color de fondo */
-    border-radius: 10px;
-    /* Borde redondeado */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    /* Sombra suave */
-    padding: 30px;
-    /* Espaciado interno */
-    flex-direction: column;
-    justify-content: space-between
-    
+  margin: 20px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Sombra sutil
+  border-radius: 10px; // Bordes redondeados
+  display: flex; // Usar flexbox para centrar contenido
+  flex-direction: column; // Colocar elementos en columna
+  align-items: center; // Centrar horizontalmente
+  text-align: center; // Centrar texto
 }
 
-/* Estilos para el título de la tarjeta */
 .custom-card-title {
-    font-size: 1.2rem;
-    /* Tamaño de fuente del título */
-    color: #333333;
-    /* Color del texto del título */
-    font-weight: bold;
-    /* Negrita */
+  color: $primary-color;
+  font-weight: bold;
 }
 
-/* Estilos para el encabezado de la tarjeta */
 .custom-card-header {
-    font-size: 1rem;
-    /* Tamaño de fuente del encabezado */
-    color: #666666;
-    /* Color del texto del encabezado */
-    margin-bottom: 20px;
-    /* Espaciado inferior */
+  color: darken($primary-color, 10%);
 }
 
-/* Estilos para el botón de la tarjeta */
+.boton-center {
+  display: flex;
+  justify-content: center;
+}
+
 .custom-button {
-    --border-radius: 50px;
-    /* Borde redondeado del botón */
-    --background: #313fc0;
-    /* Color de fondo del botón */
-    --color: #ffffff;
-    /* Color del texto del botón */
-    --padding-start: 20px;
-    /* Espaciado interno izquierdo */
-    --padding-end: 20px;
-    /* Espaciado interno derecho */
-    font-weight: bold;
-    /* Negrita */
-    
+  background-color: $primary-color;
+  color: $secondary-color;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
 }
 
-/* Aplicar márgenes o espaciados según sea necesario */
-.custom-card-container {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.boton-center{
-    display: flex;
-    justify-content: center; /* Centrar horizontalmente */
+.maps-image {
+  width: 100%; // Se ajusta al contenedor
+  max-width: 400px; // Limitar el tamaño máximo
+  border-radius: 10px; // Bordes redondeados para la imagen
+  margin-top: 20px; // Espacio encima de la imagen
 }
