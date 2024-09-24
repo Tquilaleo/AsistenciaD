@@ -4,31 +4,31 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-card>
-  <ion-card-content>
-    <div class='container'>
-      <ion-content [fullscreen]="true" class="login-content">
-        <ion-card-header>
-          <ion-card-title>
-            <div class="centered-container">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="Login Image" class="login-image">
-            </div>
-          </ion-card-title>
-        </ion-card-header>
+<ion-content [fullscreen]="true" class="login-content">
+  <div class="container">
+    <ion-card class="login-card">
+      <ion-card-header>
+        <ion-card-title>
+          <div class="centered-container">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="Login Image" class="login-image">
+          </div>
+        </ion-card-title>
+      </ion-card-header>
 
+      <ion-card-content>
         <form [formGroup]="usuario" (ngSubmit)="navegarExtras()">
           <ion-item>
-            <ion-input label="User" labelPlacement="floating" placeholder="User" formControlName="user"></ion-input>
+            <ion-input label="User" labelPlacement="floating" placeholder="Usuario" formControlName="user"></ion-input>
           </ion-item>
           <ion-item>
-            <ion-input type="password" label="Pass" labelPlacement="floating" placeholder="Pass" formControlName="pass"></ion-input>
+            <ion-input type="password" label="Pass" labelPlacement="floating" placeholder="Contraseña" formControlName="pass"></ion-input>
           </ion-item>
 
           <ion-button expand="block" color="success" type="submit" fill="outline">
             <ion-icon name="log-in-outline"></ion-icon> Entrar
           </ion-button>
         </form>
-      </ion-content>
-    </div>
-  </ion-card-content>
-</ion-card>
+      </ion-card-content>
+    </ion-card>
+  </div>
+</ion-content>
