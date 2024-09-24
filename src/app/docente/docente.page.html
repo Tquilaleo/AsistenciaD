@@ -1,13 +1,15 @@
 <ion-menu contentId="main-content">
   <ion-header>
     <ion-toolbar>
-      <ion-title><ion-icon name="home-outline"></ion-icon>Menu</ion-title>
+      <ion-title><ion-icon name="menu-outline"></ion-icon>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <ion-content class="ion-padding">
     <div class="button-bar">
-      <ion-button (click)="salirAplicacion()"><ion-icon name="exit-outline"></ion-icon>Cerrar sesión</ion-button>
+      <ion-button (click)="salirAplicacion()">
+        <ion-icon name="exit-outline"></ion-icon>Cerrar sesión
+      </ion-button>
     </div>
   </ion-content>     
 </ion-menu>
@@ -26,6 +28,9 @@
 <!-- Asegúrate de que el content tenga el id="main-content" -->
 <ion-content id="main-content" [fullscreen]="true">
   <div class="card-container">
+    <div class="centered-container">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/aa/Logo_DuocUC.svg" alt="Login Image" class="login-image">
+
     <ion-card>
       <ion-card-header>
         <ion-card-title> Clases asignadas </ion-card-title>
@@ -40,5 +45,6 @@
       </ion-card-content>
 
     </ion-card>
+  </div>
   </div>  
 </ion-content>
