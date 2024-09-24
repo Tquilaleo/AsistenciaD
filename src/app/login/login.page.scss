@@ -8,7 +8,7 @@
 }
 
 .container {
-  background-color: #215c84; /* Fondo turquesa oscuro */
+  background: linear-gradient(to bottom, #215c84, #c2e1f7); /* Degradado de arriba hacia abajo */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,7 +19,7 @@
 .login-card {
   width: 90%;
   max-width: 400px;
-  background-color: #ece1e1; /* Fondo gris claro */
+  background-color: #fff; /* Fondo gris claro */
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 20px;
@@ -41,24 +41,21 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
 }
 
-/* Estilo de los inputs */
-ion-item {
-  border-color: transparent; /* Bordes transparentes */
-  --highlight-color-focused: #236373; /* Color de borde cuando está enfocado */
-  margin-bottom: 15px;
 
-  
-}
 
 ion-input {
-  background: #fff; /* Fondo blanco para los inputs */
+  background: #e7e7e765; /* Fondo blanco para los inputs */
   border-radius: 15px; /* Bordes redondeados */
   padding: 10px;
   --padding-start: 10px; /* Espacio inicial dentro del input */
   color: #333; /* Color del texto */
-  --placeholder-color: #888; /* Color del placeholder */
+  --placeholder-color: #726d6d; /* Color del placeholder */
+  
 }
 
+h1{
+  color: #333;
+}
 /* Estilo del botón */
 ion-button {
   margin-top: 10px;
