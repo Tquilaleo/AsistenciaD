@@ -7,10 +7,15 @@ ion-content {
 }
 
 .contenedor-qr {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 100%; /* Ajusta al 100% del ancho disponible */
+    max-width: 200px; /* Define un tamaño máximo */
+    margin: 20px auto 10px auto; /* Centrado */
+    display: block;
+    object-fit: contain; /* Evita que la imagen se deforme o se corte */
+    border-radius: 20px; /* Un ligero redondeo en las esquinas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+   
+
 }
 
 .botones {
@@ -21,7 +26,32 @@ ion-content {
 
 ion-card {
     width: 90%;
-    max-width: 500px;
-    margin: auto;  /* Centra el card con margen automático */
-    padding: 16px; /* Opcional, para que el contenido dentro del card no quede pegado */
-}
+    max-width: 400px;
+    background-color: #fff; /* Fondo gris claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Define una fuente base */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  }
+  .container {
+    background: linear-gradient(to bottom, #215c84, #c2e1f7); /* Degradado de arriba hacia abajo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Apila los elementos en columna */
+    text-align: center;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
+  }

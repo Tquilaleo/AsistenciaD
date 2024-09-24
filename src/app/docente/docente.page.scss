@@ -1,28 +1,56 @@
 ion-content {
     display: flex;
-    align-items: center;
-    /* Centra verticalmente */
-    justify-content: center;
-    /* Centra horizontalmente */
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  padding: 0;
+  margin: 0;
 }
 
 .card-container {
-    width: 100%;
-    /* Opcional, para asegurar que el contenedor ocupe todo el ancho disponible */
+    background: linear-gradient(to bottom, #215c84, #c2e1f7); /* Degradado de arriba hacia abajo */
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: flex-start; /* Cambiar a flex-start para permitir que el contenido fluya hacia abajo */
+    width: 100%;
+    height: 100%; /* Cambiar a auto para permitir que el contenido expanda el contenedor */
+    padding: 20px; /* Espaciado alrededor del contenido */
+    box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total */
+  
 }
-
+ion-card-title{
+    color: black;
+}
 ion-card {
-    width: 90%;
-    /* Ajusta el ancho del card según sea necesario */
-    max-width: 500px;
-    /* Ajusta el máximo ancho del card */
+    margin: 15px auto; /* Margen superior e inferior */
+  padding: 20px; /* Espaciado interno más amplio */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Sombra más sutil */
+  border-radius: 12px; /* Bordes redondeados */
+  display: flex; /* Usar flexbox para centrar contenido */
+  flex-direction: column; /* Colocar elementos en columna */
+  align-items: center; /* Centrar horizontalmente */
+  text-align: center; /* Centrar texto */
+  background-color: #fff; /* Fondo blanco para la tarjeta */
+  width: 90%;
+  max-width: 400px;
 }
 
 .botones-clases {
     display: flex;
     flex-direction: column;
     gap: 10px; /* Espacio entre los botones */
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Define una fuente base */
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+  }
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Apila los elementos en columna */
+    text-align: center;
+    width: 100%; /* Asegúrate de que ocupe el 100% del ancho */
   }

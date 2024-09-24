@@ -16,7 +16,7 @@ export class QralumnoPage implements OnInit {
   }
 
   Volver(){
-    this.router.navigate(['/docente'])
+    this.router.navigate(['/alumno'])
   }
 
   ngOnInit() {

@@ -1,12 +1,74 @@
+.login-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Altura completa de la ventana */
+  padding: 0;
+  margin: 0;
+}
+
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Alinea verticalmente */
-    align-items: center;     /* Alinea horizontalmente */
-    height: 100vh;           /* Asegura que el contenedor tenga altura completa de la vista */
-  }
+  background: linear-gradient(to bottom, #215c84, #c2e1f7); /* Degradado de arriba hacia abajo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-card {
+  width: 90%;
+  max-width: 400px;
+  background-color: #fff; /* Fondo gris claro */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.login-image {
+  width: 100%; /* Ajusta al 100% del ancho disponible */
+  max-width: 200px; /* Define un tamaño máximo */
+  margin: 20px auto 10px auto; /* Centrado */
+  display: block;
+  object-fit: contain; /* Evita que la imagen se deforme o se corte */
+  border-radius: 10px; /* Un ligero redondeo en las esquinas */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+}
+
+
+
+ion-input {
+  background: #e7e7e765; /* Fondo blanco para los inputs */
+  border-radius: 15px; /* Bordes redondeados */
+  padding: 10px;
+  --padding-start: 10px; /* Espacio inicial dentro del input */
+  color: #333; /* Color del texto */
+  --placeholder-color: #726d6d; /* Color del placeholder */
   
-  ion-card {
-    --background: #000;
-    --color: #9efff0;
-  }
+}
+
+h1{
+  color: #333;
+}
+/* Estilo del botón */
+ion-button {
+  margin-top: 10px;
+  background: #005ea3; /* Color de fondo del botón */
+  color: #fff; /* Color del texto */
+  border-radius: 10px; /* Bordes redondeados */
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  
+}
+
+/* Efecto hover en el botón */
+ion-button:hover {
+  background: #013a63; /* Fondo más oscuro al pasar el mouse */
+  
+}

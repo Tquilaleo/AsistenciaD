@@ -12,12 +12,12 @@ export class LoginPage implements OnInit {
 
   // Define los objetos de alumnos y profesor
   alumnos = [
-    { nombre: 'tamara', contraseña: '123' },
-    { nombre: 'miguel', contraseña: '154' },
-    { nombre: 'cristian', contraseña: '485' }
+    { nombre: 'tamara', contraseña: '12345' },
+    { nombre: 'miguel', contraseña: '15448' },
+    { nombre: 'cristian', contraseña: '48568' }
   ];
 
-  profesor = { nombre: 'diego', contraseña: '372' };
+  profesor = { nombre: 'diego', contraseña: '1234' };
 
   constructor(private router: Router, private alertController: AlertController) { } // Agregar AlertController
 
